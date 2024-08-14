@@ -11895,39 +11895,117 @@ label #canel {
   display: none;
 }
 
-@media (max-width: 428px) {
-  .navbare {
-    width: 100vw;
-  }
-  .right-side {
-    position: fixed;
-    width: 50%;
-    height: 70vh;
-    background: black;
-    top: 17vh;
-    left: -100%;
-    gap: 5vh;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s;
-  }
-  .right-side ul {
-    gap: 2vh !important;
-    width: 71%;
-    flex-direction: column;
-  }
-  .right-side ul li a {
-    color: white;
-  }
-  .right-side label #canel {
-    display: block;
-  }
-  label #btn {
-    display: block;
-  }
-  #check:checked ~ .right-side {
-    left: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: caveat;
+  src: url(fonts/static/Caveat-medium.ttf);
+}
+.container {
+  display: flex;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+.leftContent h2, .leftContent .h2 {
+  font-family: caveat;
+  width: 45vw;
+  font-size: 50px;
+}
+.leftContent p {
+  width: 30vw;
+  font-size: 20px;
+  padding-bottom: 4vh;
+}
+
+.rightContent {
+  margin: auto;
+}
+.rightContent img {
+  width: 420px;
+}
+
+.btnContent i {
+  padding-left: 2vw;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btnHome {
+  color: white;
+  text-decoration: none;
+  background: #801c1c;
+  padding: 5px 25px;
+  border-radius: 25px;
+}
+
+.btnWatch {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: caveat;
+  src: url(public\f ontsstaticÊveat-Medium.ttf);
+}
+.first-about {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-about h2, .first-about .h2 {
+  font-size: 20px;
+}
+.first-about p {
+  font-family: caveat;
+  font-size: 35px;
+}
+
+.spnAT {
+  color: red;
+}
+
+.contentsecond {
+  display: flex;
+}
+.contentsecond .leftAbout {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentsecond .leftAbout img {
+  width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5vh;
+}
+.contentsecond .leftAbout .cardAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  border: 4px solid grey;
+}
+.contentsecond .rightAbout {
+  width: 40vw;
+}
+.contentsecond .rightAbout .cardRightAbt ul {
+  width: 35vw;
+}
+.contentsecond .rightAbout .cardRightAbt ul li {
+  display: flex;
+  list-style: none;
+}
+.contentsecond .rightAbout .cardRightAbt ul li span {
+  padding-inline-start: 1vw;
 }
 
 /*# sourceMappingURL=app.css.map */
