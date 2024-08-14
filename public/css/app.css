@@ -11862,13 +11862,17 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
+.right-side ul {
+  gap: 3vw;
+}
 .right-side ul li {
   list-style: none;
 }
 
 .last-side a {
   border: none;
-  background: #ed1f1f;
+  background: #d53535;
+  color: white;
   padding: 10px 40px;
   border-radius: 25px;
   text-align: center;

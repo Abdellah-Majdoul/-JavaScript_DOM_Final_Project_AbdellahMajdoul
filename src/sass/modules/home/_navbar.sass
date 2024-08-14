@@ -1,0 +1,79 @@
+*
+    margin: 0
+    padding: 0
+@font-face 
+    font-family: "satisfy" 
+    src: url(../../public/fonts/Satisfy-Regular.ttf)
+
+.navbare
+    padding: 3vh 3vh
+
+    
+    a
+        color: black 
+        text-decoration: none
+.right-side
+    ul
+        gap: 3vw
+        li
+            list-style: none
+.last-side
+    a
+        
+        border: none
+        background: #d53535
+        color: white
+        padding: 10px 40px
+        border-radius: 25px
+        text-align: center
+.left-side
+    font-family: "satisfy"
+    h1
+        font-size: 40px 
+        font-weight: bold
+
+
+label #btn,
+label #canel
+    color: black
+    font-size: 30px
+    float: right
+    cursor: pointer
+    display: none
+
+
+@media (max-width:428px )
+    .navbare 
+        width: 100vw 
+
+
+    .right-side
+        position: fixed
+        width: 50%  
+        height: 70vh
+        background: black  
+        top: 17vh 
+        left: -100%
+        gap: 5vh
+        display: flex
+        flex-direction: column
+
+        transition: 0.5s
+        ul
+            gap: 2vh !important 
+            width: 71%
+            flex-direction: column 
+            li
+                a
+                    color: white 
+
+        label #canel
+            display: block
+            
+           
+       
+        
+    label #btn
+        display: block
+    #check:checked ~ .right-side 
+        left: 0 
