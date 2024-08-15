@@ -12379,4 +12379,50 @@ label #canel {
   color: red;
 }
 
+.footerContainer {
+  height: 30vh;
+  background: #1f1f24;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+.footerContainer h4, .footerContainer .h4, .footerContainer p {
+  color: white;
+}
+
+.contentFotter p {
+  width: 15vw;
+}
+.contentFotter a i {
+  padding: 8px;
+  border-radius: 30px;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.secondFooter {
+  background: #1f1f24;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secondFooter p {
+  color: white;
+}
+
+.paraFooter {
+  font-weight: bold;
+  font-size: 12px;
+}
+.paraFooter span {
+  color: red;
+}
+
+.para {
+  font-size: 13px;
+}
+
 /*# sourceMappingURL=app.css.map */
