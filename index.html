@@ -11,7 +11,7 @@
   <header>
         
             
-    <nav class="navbare d-flex  justify-content-around">
+    <nav class="navbare d-flex fixed-top  justify-content-around">
         <!-- <input type="checkbox" id="check">
         <label for="check">
             <i class="fa-solid fa-bars" id="btn"></i>
@@ -61,11 +61,11 @@
           </div>
         </nav>
     
-</header>
+</header><br>
 
 <main>
    <!-- this is home section  -->
-  <section class="bg-light" id="home">
+  <section class="bg-light sc" id="home">
     <div class="container">
       <div class="leftContent">
         <h2>Enjoy Your Healthy
@@ -435,6 +435,107 @@
         </div>
       </div>
     </section>
+
+    <!-- this is gallery  -->
+     <section id="gallery">
+      <div class="containerGallery">
+        <div class="titreGallery">
+          <h3>GALLERY</h3>
+          <p>Check <span>Our Gallery</span></p>
+        </div>
+      </div>
+     </section>
+
+
+     <!-- this is contact  -->
+      <section id="contact">
+          <div class="containerContact" style="height: 100vh;">
+            <div class="titleContact d-flex flex-column justify-content-center align-items-center bg-light" style="font-family: caveat; height: 30vh;">
+               <h3 class=" text-grey" style="font-size: 15px ; color: grey;">CONTACT</h3>
+               <p class="fs-3">Need Help? <span class="text-danger">Contact Us</span></p>
+            </div>
+            <div class="mapscontact d-flex justify-content-center align-items-center">
+              <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6952066.401367476!2d-12.448053867566413!3d31.70049407323309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMaroc!5e0!3m2!1sfr!2sma!4v1715952606752!5m2!1sfr!2sma"
+            width="90%"
+            height="430"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+            </div>
+
+
+            <div class="cardContact h-50 d-flex  justify-content-center align-items-center">
+              <div class="contentCartContact  h-50 d-flex flex-column gap-3" style="width: 90vw; ">
+                <div class="d-flex gap-4">
+                  <div class="d-flex  align-items-center ps-2 p-2 w-50 gap-3 shadow">
+                    <i class="icon bi bi-geo-alt flex-shrink-0 fs-1 p-2 bg-danger rounded-circle"></i>
+                    <div class="">
+                      <h1 class="fs-5 fw-bold">
+                      Address</h1>
+                    <p class="fs-6">A108 Adam Street, New York, NY 535022</p></div>
+                  </div>
+                  <div class="d-flex  align-items-center ps-2  w-50 gap-3 shadow">
+                    <i class="icon bi bi-telephone flex-shrink-0 fs-1 p-2 bg-danger rounded-circle"></i>
+                    
+                    <div class="">
+                      <h1 class="fs-5 fw-bold">
+                        Call Us</h1>
+                    <p class="fs-6">+1 5589 55488 55</p></div>
+                  </div>
+                  </div>
+                <div class="d-flex gap-4">
+                  <div class="d-flex  align-items-center ps-2 p-2 w-50 gap-3 shadow">
+                    
+                    <i class="icon bi bi-envelope flex-shrink-0 fs-1 p-2 bg-danger rounded-circle"></i>
+                    <div class="">
+                      <h1 class="fs-5 fw-bold ">
+                        Email Us</h1>
+                    <p class="fs-6">info@example.com</p></div>
+                  </div>
+                  <div class="d-flex  align-items-center ps-2  w-50 gap-3 shadow">
+                    <i class="icon bi bi-clock flex-shrink-0 fs-1 p-2 bg-danger rounded-circle"></i>
+                    <div class="">
+                      <h1 class="fs-5 fw-bold ">
+                        Opening Hours</h1>
+                    <p class="fs-6">Mon-Sat: 11AM - 23PM; Sunday: Closed</p></div>
+                  </div>
+                  </div>
+              
+               
+                
+              </div>
+            </div>
+            <div class="thirdcontact d-flex justify-content-center align-items-center" style="height: 100vh;">
+              <div class="co p-4 shadow" style="width: 90vw ; ">
+                <form action="" class="d-flex flex-column ">
+                  <div class="d-flex flex-column  gap-3 ">
+                    <div class=" d-flex gap-3">
+                      <input type="text" name="name" class="form-cl w-50 p-2" id="name" placeholder="Your Name" >
+                      <input type="email" class="form-cl w-50 p-2" name="email" id="email" placeholder="Your Email" >
+                      
+    
+                    </div>
+                    <div class="d-flex gap-3">
+                      <input type="date" name="date" class="form-cl w-100 p-2" id="date" placeholder="Date" >
+                      
+    
+                    </div>
+                  </div>
+                  <div class="pt-3">
+                    <textarea class="w-100 p-3" name="message" rows="5" placeholder="Message"></textarea>
+                  </div>
+                  <div class="text-center pt-2 ">          
+                    <button class="p-2  border-0 text-bg-danger rounded-pill">Send message</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+      </section>
  </main>
 
 

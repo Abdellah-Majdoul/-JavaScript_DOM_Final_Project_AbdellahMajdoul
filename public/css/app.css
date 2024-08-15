@@ -11856,6 +11856,7 @@ textarea.form-control-lg {
 }
 .navbare {
   padding: 3vh 3vh;
+  background: #ffffff;
 }
 .navbare a {
   color: black;
@@ -11932,6 +11933,10 @@ label #canel {
   font-family: caveat;
   src: url(fonts/static/Caveat-medium.ttf);
 }
+.sc {
+  padding-top: 15vh;
+}
+
 .container {
   display: flex;
   padding-top: 8vh;
@@ -12285,10 +12290,6 @@ label #canel {
   padding-bottom: 5vh;
 }
 
-.containerSecondChefs {
-  height: 100vh;
-}
-
 .firstSecondChefs {
   height: 35vh;
   display: flex;
@@ -12352,6 +12353,30 @@ label #canel {
   border: none;
   border-radius: 5px;
   background: #b10505;
+}
+
+.containerGallery {
+  background: #000;
+  height: 100vh;
+}
+
+.titreGallery {
+  height: 35vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titreGallery h3, .titreGallery .h3 {
+  font-size: 15px;
+  color: grey;
+}
+.titreGallery p {
+  font-size: 25px;
+}
+.titreGallery p span {
+  color: red;
 }
 
 /*# sourceMappingURL=app.css.map */
