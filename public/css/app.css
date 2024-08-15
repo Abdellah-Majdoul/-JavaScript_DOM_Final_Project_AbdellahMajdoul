@@ -12203,5 +12203,57 @@ label #canel {
     width: 100vw;
   }
 }
+.containerChefs {
+  padding-bottom: 10vh;
+}
+
+.firstChefs {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstChefs h3, .firstChefs .h3 {
+  font-size: 15px;
+}
+.firstChefs p {
+  font-size: 30px;
+  font-family: caveat;
+}
+.firstChefs p span {
+  color: red;
+}
+
+.cardChefs {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.card1chefs {
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 8px grey;
+}
+
+.imgCard img {
+  border-radius: 10px 10px 0px 0px;
+  height: 60vh;
+  width: 30vw;
+}
+
+.discChefs {
+  text-align: center;
+}
+.discChefs h3, .discChefs .h3 {
+  padding-top: 2vh;
+  font-size: 25px;
+}
+.discChefs span {
+  color: grey;
+}
+.discChefs p {
+  width: 25vw;
+}
 
 /*# sourceMappingURL=app.css.map */
