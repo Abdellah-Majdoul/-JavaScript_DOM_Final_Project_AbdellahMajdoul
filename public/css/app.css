@@ -11879,7 +11879,7 @@ textarea.form-control-lg {
 }
 
 .left-side {
-  font-family: "satisfy";
+  font-family: "caveat";
 }
 .left-side h1, .left-side .h1 {
   font-size: 40px;
@@ -11895,6 +11895,34 @@ label #canel {
   display: none;
 }
 
+@media (max-width: 428px) {
+  .navbare {
+    width: 100vw;
+  }
+  .right-side {
+    position: fixed;
+    width: 50%;
+    height: 70vh;
+    background: black;
+    top: 17vh;
+    left: -100%;
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  .right-side ul {
+    gap: 2vh !important;
+    width: 71%;
+    flex-direction: column;
+  }
+  .right-side ul li a {
+    color: white;
+  }
+  .right-side label #canel {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -12239,7 +12267,7 @@ label #canel {
 .imgCard img {
   border-radius: 10px 10px 0px 0px;
   height: 60vh;
-  width: 30vw;
+  width: 27vw;
 }
 
 .discChefs {
@@ -12253,7 +12281,77 @@ label #canel {
   color: grey;
 }
 .discChefs p {
+  width: 27vw;
+  padding-bottom: 5vh;
+}
+
+.containerSecondChefs {
+  height: 100vh;
+}
+
+.firstSecondChefs {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstSecondChefs h3, .firstSecondChefs .h3 {
+  font-size: 15px;
+  color: grey;
+}
+.firstSecondChefs p {
+  font-size: 30px;
+}
+.firstSecondChefs p span {
+  color: red;
+}
+
+.secondchefs {
+  height: 70vh;
+  display: flex;
+  background: #f8f8f8;
+}
+
+.leftTable {
+  height: 100%;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftTable img {
   width: 25vw;
+}
+
+.rightTable {
+  height: 100%;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 20vw;
+}
+
+.texterea {
+  padding-top: 2vh;
+}
+
+.textArea {
+  width: 62.3vw;
+}
+
+.btnBook {
+  padding-top: 2vh;
+}
+.btnBook button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+  background: #b10505;
 }
 
 /*# sourceMappingURL=app.css.map */
