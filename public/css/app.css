@@ -11896,13 +11896,19 @@ label #canel {
   display: none;
 }
 
+#check {
+  display: none;
+}
+
 @media (max-width: 428px) {
   .navbare {
     width: 100vw;
   }
   .right-side {
     position: fixed;
-    width: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     height: 70vh;
     background: black;
     top: 17vh;
@@ -11922,6 +11928,15 @@ label #canel {
   }
   .right-side label #canel {
     display: block;
+  }
+  label #btn {
+    display: block;
+  }
+  #check {
+    display: flex;
+  }
+  #check:checked ~ .right-side {
+    left: 0;
   }
 }
 * {
@@ -11998,6 +12013,9 @@ label #canel {
   }
   .contentsecond {
     flex-direction: column;
+  }
+  .rightContent img {
+    width: 400px;
   }
 }
 @font-face {
@@ -12157,6 +12175,19 @@ label #canel {
   .secondCart1, .secondCart2, .secondCart3 {
     width: 100%;
   }
+  .rightAbout {
+    width: 100vw;
+  }
+  .rightAbout .cardRightAbt ul {
+    width: 35vw;
+  }
+  .rightAbout .cardRightAbt ul li {
+    display: flex;
+    list-style: none;
+  }
+  .rightAbout .cardRightAbt ul li span {
+    padding-inline-start: 1vw;
+  }
 }
 .thirdSection {
   background: #000;
@@ -12198,6 +12229,11 @@ label #canel {
   font-weight: bold;
 }
 
+@media (max-width: 428px) {
+  .petitCard {
+    flex-direction: column;
+  }
+}
 .nav {
   display: flex;
   justify-content: center;
@@ -12326,6 +12362,17 @@ label #canel {
   padding-bottom: 5vh;
 }
 
+@media (max-width: 428px) {
+  .cardChefs {
+    flex-direction: column;
+  }
+  .discChefs p {
+    width: 100%;
+  }
+  .imgCard img {
+    width: 100vw;
+  }
+}
 .firstSecondChefs {
   height: 35vh;
   display: flex;
@@ -12459,6 +12506,12 @@ label #canel {
 
 .para {
   font-size: 13px;
+}
+
+.icon :hover {
+  background: #e00404;
+  color: #000;
+  border-radius: 25px;
 }
 
 @media (max-width: 428px) {

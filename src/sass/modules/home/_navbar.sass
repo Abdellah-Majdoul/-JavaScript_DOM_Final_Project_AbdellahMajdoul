@@ -39,6 +39,8 @@ label #canel
     cursor: pointer
     display: none
 
+#check
+    display: none
 
 @media (max-width:428px )
     .navbare 
@@ -47,7 +49,9 @@ label #canel
 
     .right-side
         position: fixed
-        width: 50%  
+        width: 100%  
+        align-items: center
+        justify-content: center
         height: 70vh
         background: black  
         top: 17vh 
@@ -66,12 +70,11 @@ label #canel
                     color: white 
 
         label #canel
-            display: block
-            
-           
-       
+            display: block 
         
-//     label #btn
-//         display: block
-//     #check:checked ~ .right-side 
-//         left: 0 
+    label #btn
+        display: block
+    #check
+        display: flex 
+    #check:checked ~ .right-side 
+        left: 0 
