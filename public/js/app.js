@@ -1,3 +1,4 @@
+// menu 
 const navLinks = document.querySelectorAll('.nav-link');
 const table = document.querySelectorAll('.tab-pane');
 navLinks.forEach((link, index) => {
@@ -17,7 +18,7 @@ navLinks.forEach((link, index) => {
     });
 
     
-
+// modal 
 const modal = document.getElementById("myModal");
 const openModalBtn = document.getElementById("openModal");
 const closeBtn = document.querySelector(".close");
@@ -40,7 +41,7 @@ closeModalBtn.addEventListener("click", ()=> {
 
 
 
-
+// carousel hero 
 let containers = document.querySelectorAll(".carousel-container");
 let currentIndex = 0;
 
@@ -128,3 +129,4 @@ openbtn.addEventListener('click',(e)=>{
     })
    
 })
+
