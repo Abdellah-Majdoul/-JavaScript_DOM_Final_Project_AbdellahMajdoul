@@ -11982,6 +11982,24 @@ label #canel {
   text-decoration: none;
 }
 
+@media (max-width: 428px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .leftContent h2, .leftContent .h2 {
+    width: 60%;
+    font-size: 25px;
+  }
+  .leftContent p {
+    width: 100%;
+    font-size: 17px;
+    color: grey;
+  }
+  .contentsecond {
+    flex-direction: column;
+  }
+}
 @font-face {
   font-family: caveat;
   src: url(public\f ontsstaticÊveat-Medium.ttf);
@@ -12046,7 +12064,6 @@ label #canel {
 }
 
 .containerSecondAbout {
-  height: 65vh;
   display: flex;
 }
 
@@ -12059,15 +12076,13 @@ label #canel {
 }
 
 .secondCardAbout {
-  height: 100%;
   width: 60vw;
   display: flex;
   gap: 2vw;
 }
 .secondCardAbout .secondCart1, .secondCardAbout .secondCart2, .secondCardAbout .secondCart3 {
   background: white;
-  height: 100%;
-  width: 25vw;
+  width: 35vw;
 }
 .secondCardAbout .secondCart1 .contenetCart1, .secondCardAbout .secondCart2 .contenetCart1, .secondCardAbout .secondCart3 .contenetCart1 {
   padding-top: 10vh;
@@ -12125,6 +12140,24 @@ label #canel {
   font-weight: bold;
 }
 
+@media (max-width: 428px) {
+  .containerSecondAbout {
+    display: flex;
+    flex-direction: column;
+  }
+  .secondCardAbout {
+    flex-direction: column;
+  }
+  .firstDiv {
+    width: 100%;
+  }
+  .contentDiv {
+    padding: 5vh 5vh;
+  }
+  .secondCart1, .secondCart2, .secondCart3 {
+    width: 100%;
+  }
+}
 .thirdSection {
   background: #000;
   background-repeat: no-repeat;
@@ -12232,8 +12265,11 @@ label #canel {
   .contentMenu {
     flex-direction: column;
   }
+  .contentMenu .leftMenu {
+    flex-direction: column;
+  }
   .contentMenu .leftMenu .lf-div {
-    width: 100vw;
+    width: 100%;
   }
 }
 .containerChefs {
@@ -12380,7 +12416,7 @@ label #canel {
 }
 
 .footerContainer {
-  height: 30vh;
+  padding: 5vh 5vh;
   background: #1f1f24;
   display: flex;
   justify-content: space-evenly;
@@ -12425,6 +12461,11 @@ label #canel {
   font-size: 13px;
 }
 
+@media (max-width: 428px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+}
 .modal {
   display: none;
   width: 100%;
@@ -12481,22 +12522,6 @@ label #canel {
   border-radius: 50%;
 }
 
-.next, .previous {
-  padding: 1vh 2vw;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.next {
-  right: 0px;
-}
-
-.previous {
-  left: 0;
-}
-
 .indicators-grp {
   width: 100%;
   padding: 2vh 0;
@@ -12540,6 +12565,65 @@ label #canel {
   font-size: 10px;
   font-family: caveat;
   color: grey;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.vedioCaros {
+  background: rgba(147, 144, 144, 0.337254902);
+}
+
+.crlVedio {
+  display: none;
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.crlVedio img {
+  border-radius: 25px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.btnCarosel {
+  display: none;
+  justify-content: center;
+  gap: 5vw;
+  text-align: center;
+}
+
+.btnCarosel button {
+  margin-top: 2vh;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.btnPv {
+  background: #ed0303;
+  position: absolute;
+  left: 13vw;
+  bottom: 25vh;
+}
+
+.btnNx {
+  background: #ed0303;
+  position: absolute;
+  right: 13vw;
+  bottom: 25vh;
+}
+
+.btnClose {
+  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */

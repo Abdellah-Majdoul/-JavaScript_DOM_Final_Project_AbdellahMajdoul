@@ -1,24 +1,20 @@
 .content
     padding: 9vh 9vh
 .containerSecondAbout
-    height: 65vh 
     display: flex
 .firstDiv
     color: white
     width: 35vw
     display: flex
-    
     justify-content: center
     align-items: center
 .secondCardAbout
-    height: 100%
     width: 60vw
     display: flex
     gap: 2vw
     .secondCart1,.secondCart2,.secondCart3
         background: white
-        height: 100%
-        width: calc( 75vw / 3  )
+        width: 35vw 
         .contenetCart1
             padding-top: 10vh
             gap: 2vh
@@ -65,3 +61,22 @@
             background: #fdf4f4 
             color: red 
             font-weight: bold
+
+
+
+@media (max-width:428px )
+    .containerSecondAbout 
+        display: flex
+        flex-direction: column
+    .secondCardAbout
+        flex-direction: column
+    .firstDiv
+        width: 100%
+
+    .contentDiv
+        padding: 5vh 5vh 
+    .secondCart1,.secondCart2,.secondCart3
+        width: 100%  
+    
+
+

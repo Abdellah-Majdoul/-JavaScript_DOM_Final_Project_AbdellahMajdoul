@@ -78,7 +78,7 @@
 <main>
    <!-- this is home section  -->
   <section class="bg-light sc" id="home">
-    <div class="container">
+    <div class="container position-relative">
       <div class="leftContent">
         <h2>Enjoy Your Healthy
           Delicious Food</h2>
@@ -86,9 +86,50 @@
           <div class="btnContent">
             <a href="" class="btnHome">Book a Table</a>
             <i class="bi bi-play-circle"></i>
-            <a href="" class="btnWatch"><span>Watch Video</span></a>
+            <a href="" id="openCarusl" class="btnWatch"><span>Watch Video</span></a>
           </div>
       </div>
+    <div class="vedioCaros position-absolute">
+      <div class="crlVedio">
+        <video
+             class="w-100 slide"
+              controls
+              
+            >
+              <source
+                src="./public/vedio/BootstrapMade Template Builder Overview_2.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <video
+            class="w-100 slide"
+             controls
+            
+           >
+             <source
+               src="./public/vedio/BootstrapMade Template Builder Overview_2.mp4"
+               type="video/mp4"
+             />
+           </video>
+           <video
+           
+            controls
+            poster="./public/images/about-2.jpg"
+          >
+            <source
+              src="./public/vedio/BootstrapMade Template Builder Overview_2.mp4"
+              type="video/mp4"
+            />
+          </video>
+    </div>
+    <div class="btnCarosel">
+        <button class="btnPv" onclick="goPrev()"><</button>
+        <button class="btnNx"  onclick="goNext()">></button>
+    </div>
+    <div class="btnClose">
+        <button >Close</button>
+    </div>
+    </div>
       <div class="rightContent">
         <img src="./public/images/hero-img.png"  alt="">
       </div>
@@ -534,7 +575,7 @@
     </section>
 
     <!-- this is gallery  -->
-     <section id="gallery">
+     <section id="Gallery">
       <div class="containerGallery">
         <div class="titreGallery">
           <h3>GALLERY</h3>
@@ -633,50 +674,7 @@
 
 
  </main>
-<footer>
-  <div class="footerContainer">
-    <div class="d-flex gap-2">
-      <i class="bi bi-geo-alt icon text-danger fs-4 fw-bold"></i>
-      <div class="contentFotter">
-        <h4 class="fw-bold fs-5">Adress</h4>
-        <p>A108 Adam Street
-          New York, NY 535022</p>
-      </div>
-    </div>
-    <div class="d-flex gap-2">
-      <i class="bi bi-telephone icon text-danger fs-4 fw-bold"></i>
-      <div class="contentFotter">
-        <h4 class="fw-bold fs-5">Contact</h4>
-        <p>Phone: +1 5589 55488 55
-          Email: info@example.com</p>
-      </div>
-    </div>
-    <div class="d-flex gap-2">
-      <i class="bi bi-clock icon text-danger fs-4 fw-bold"></i>
-      
-      <div class="contentFotter">
-        <h4 class="fw-bold fs-5">Opening Hours</h4>
-        <p>Mon-Sat: 11AM - 23PM
-          Sunday: Closed</p>
-      </div>
-    </div>
-    <div class="d-flex flex-column ">
-      <div class="contentFotter pb-4  ">
-        <h4 class="fw-bold fs-5 pb-4">Follow Us</h4>
-        <div class="d-flex gap-2">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="twitter"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="twitter"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="twitter"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="secondFooter">
-     <p>© <span> Copyright</span><b> Yummy</b> <span class="para">All Rights Reserved</span></p>
-    <p class="paraFooter">Designed by <span>Abdellah Majdoul</span></p>
-  </div>
-</footer>
+
 
     <script src="./public/js/app.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>

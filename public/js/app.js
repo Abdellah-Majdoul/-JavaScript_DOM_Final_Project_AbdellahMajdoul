@@ -79,3 +79,52 @@ containers.forEach(container => {
     });
     indicatorsGrp.querySelector(".indicator").classList.add('activeIndicator');   
 });
+
+
+
+
+// carousel vedio
+let slides=document.querySelectorAll('.slide')
+let clVedio=document.querySelectorAll('.crlVedio')
+let openbtn=document.querySelector('#openCarusl')
+let btn=document.querySelector('.btnCarosel')
+let btnClose=document.querySelector('.btnClose')
+let counter =0;
+
+slides.forEach((slide,element) => {
+    slide.style.left=`${element*100}%`
+});
+let goPrev=()=>{
+    counter--
+    slideVedio()
+}
+let goNext=()=>{
+    counter++
+    slideVedio()
+}
+const slideVedio=()=>{
+    slides.forEach((element) => {
+            element.style.transform=`translateX(-${counter*100}%)`
+        
+    });
+}
+
+openbtn.addEventListener('click',(e)=>{
+    e.preventDefault()
+
+    clVedio.forEach(element => {
+        element.style.display="flex"
+    });
+    btn.style.display="flex"
+    btnClose.style.display="flex"
+    btnClose.addEventListener('click',()=>{
+        clVedio.forEach(element => {
+            element.style.display="none"
+            btn.style.display="none"
+            btnClose.style.display='none'
+            console.log("oopop");
+        });
+        
+    })
+   
+})
